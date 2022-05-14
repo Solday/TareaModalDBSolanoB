@@ -1,0 +1,102 @@
+html,
+body {
+	font-family: "Times New Roman", Arial;
+    background-color: black;
+}
+h1{
+	color: white;
+	text-align: center;
+}
+
+fieldset {
+    font-family: sans-serif;
+    border: 3px solid  rgb(57, 57, 77);
+    background: #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+fieldset legend {
+    background:  rgb(57, 57, 77);
+    color: #fff;
+    padding: 3px 5px ;
+    font-size: 18px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 3px #ddd;
+    margin-left: 20px;
+}
+
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btn {
+	display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 123px;
+}
+
+.btn-default {
+	color: #fff;
+	background-color: rgb(57, 57, 77);
+    border-color:  rgb(57, 57, 77);
+}
+
+table {
+    font-family: "Times New Roman", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 1px solid #ddd; 
+    padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(57, 57, 77); 
+    color: white;
+}
+
+.imgTable{
+    border-radius: 10px;
+    width: 25px;
+    height: 25px;
+}
+.imgAction{
+    border-radius: 5px;
+    width: 40px;
+    height: 25px;
+}
+.imgAction:hover{
+    cursor: pointer;
+    width: 42px;
+    height: 27px;
+    overflow: hidden;
+}
+.btnLite{
+    background-color: transparent;
+    border: transparent;
+}

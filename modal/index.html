@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es-NI">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="William Sanchez G">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/css/Site.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/modal.css">
+	
+</head>
+
+<body>
+	<header>
+		<h1>Formulario - Aplicaciones graficas y multimedia</h1>
+	</header>
+	<section>
+		<article>
+			<button id="AddButton" type="button" class="btn btn-default">Agregar</button>
+			<hr>
+			<fieldset>
+				<legend>Listado</legend>
+				<table id="PersonTable">
+					<thead>
+						<tr>
+							<th>
+								Img 
+							</th> 
+							<th>Cédula</th>
+							<th>Nombres</th>
+							<th>Apellidos</th>
+							<th>Sexo</th>
+							<th>
+								Edad	
+							</th>
+							<th>
+								Zona
+							</th>
+							<th>Pasatiempos</th>
+							<th>&nbsp;&nbsp;</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><img src="./assets/img/mujer.png" id="imgT" class="imgTable" alt="" ></td>
+							<td>0010207011031H</td>
+							<td>Dayana</td>
+							<td>Solano</td>
+							<td>Femenino</td>
+							<td>
+								21  
+							</td>
+							<td>
+								Capital 
+							</td>
+							<td>Caminar</td>
+							<td>
+								<button type="button" class="btnLite" name="EditButton" onclick='ShowModalForEdit(this)'>&nbsp; 
+									<img src="./assets/img/editar.png" id="imgT" class="imgAction" alt="" >
+								</button>
+								<button type="button" class="btnLite" name="DeleteButton" onclick='deleteRow(this)'>
+									<img src="./assets/img/borrar.png" id="imgT" class="imgAction" alt="" >
+								</button>
+						 		
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</fieldset>
+		</article>
+	</section>
+
+
+	<!-- El modal -->
+	<div id="myModal" class="modal">
+		<form id="Myform">
+			<!-- Contenido modal -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>Formulario</h2>
+				</div>
+				<div class="modal-body">
+					<fieldset>
+						<legend>Datos Generales</legend>
+						<label>Cedula</label>
+						<input type="text" name="tCedula" id="IDTextBox" required="required" />
+						<br>
+						<label>Nombres</label>
+						<input type="text" name="Nombres" id="FirstNameTextBox" required="required">
+						<br>
+						<label>Apellidos</label>
+						<input type="text" name="Apellidos" id="LastNameTextBox" required="required">
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Sexo</legend>
+						<input type="radio" name="Sexo" value="Masculino" required="required">Masculino<br>
+						<input type="radio" name="Sexo" value="Femenino">Femenino
+					</fieldset>
+					<fieldset>
+						<legend>Pasatiempos</legend>
+						<input type="checkbox" name="Pasatiempos" value="Bailar">Bailar<br>
+						<input type="checkbox" name="Pasatiempos" value="Cantar">Cantar<br>
+						<input type="checkbox" name="Pasatiempos" value="Pintar">Pintar<br>
+						<input type="checkbox" name="Pasatiempos" value="Caminar">Caminar<br>
+						<input type="checkbox" name="Pasatiempos" value="Escuchar musica">Escuchar musica<br>
+					</fieldset>
+				</div>
+				<div class="modal-footer" id="modal-footer">
+					<button type="button" class="btnLite"  name="Insertar" id="InsertButton">
+						<div>
+							<img src="./assets/img/add.png" id="imgT" class="imgAction" alt="Insertar" >
+						</div>
+					</button>
+					<button type="button" class="btnLite" name="UpdateButton" id="UpdateButton" onclick="ActualizarRegistro()">
+						<div>
+							<img src="./assets/img/save.png" id="imgT" class="imgAction" alt="Insertar" >
+						</div>
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src="./assets/js/app.js"></script>
+</body>
+
+</html>
